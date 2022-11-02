@@ -1,0 +1,303 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* overflow amake page scrollable */
+html { 
+    overflow-y: scroll; 
+}
+
+.page-container {
+    position: relative;
+    min-height: fit-content;
+}
+.content-wrap {
+    padding-bottom: 50px;
+}
+/* NAVIGATION */
+nav { 
+    width: 100%;
+    text-align: bottom; 
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    color: beige;
+} 
+
+/* HEADERS */
+header1 {
+    width: 100%;
+    background-color:black;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    display: flex;  
+    justify-content:space-between;
+    align-items: center;
+}
+header2 {
+    width:100%;
+    background-color:black;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+}
+header1 h1 {
+    color: beige;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color:  beige;
+    text-decoration: none;
+    padding: 0px;
+}
+
+label {
+    font-size: 15px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin: 10px;
+    content: center;
+}
+body {
+    width: auto;
+    background: rgb(251, 248, 239);
+    margin: 0px auto;
+    margin-bottom: 50px;
+    content: center;
+}
+section {
+    background-color: rgb(251, 248, 239);
+    width: 100%;
+    height: 100%;
+    content: center;
+}
+
+/* ARTICLE HEADINGS */
+article {
+    width: 1000px;
+    background-color:none;
+    margin: 15px auto;
+    margin-bottom: 16px;
+    border-radius: 30px;
+    content: center;
+}
+article img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+}
+article h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    color: rgb(2, 2, 2);
+}
+article h3 {
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    margin:auto;
+    padding: 15px;
+    color: rgb(2, 2, 2);
+    width:max-content;
+}
+/* OPEN */
+article h4 { 
+    width: fit-content;
+    font-size: 20px;
+    text-indent: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: black;
+}
+article h5 {
+    width: 75%;
+    font-size: 20px;
+    text-indent: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    color: beige;
+    background-color: black;
+    border: 10px solid;
+    border-radius:10px;
+    border-color:black;
+}
+article h6 {
+    width: fit-content;
+    font-size: 20px;
+    text-indent: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    color: beige;
+    background-color:black;
+    border: 10px solid;
+    border-radius: 10px;
+    border-color: black;
+}
+article p {
+    width: 75%;
+    font-size: 15px;
+    text-indent: 0px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: black;
+    background-color:rgb(138, 9, 24);
+    border: 10px solid;
+    border-radius: 10px;
+    border-color: rgb(138, 9, 24);   
+}
+
+/* IMAGES & SLIDESHOWS */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mySlides1, .mySlides2, .mySlides3 {
+    display: none;
+}
+.slideshow-container {
+  width: 750px;
+  position: relative;
+  margin: auto;
+  background-color: black;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* positions the "next button" on right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* ON HOVER - grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* BUTTONS */
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    content: center;
+}
+.btn:hover {
+    background: lightgrey;
+}
+.Graphic {
+    background-color: black;
+    color: beige;
+}
+.Apparel {
+    background-color: black;
+    color: beige;
+}
+.Printmaking {
+    background-color: black;
+    color: beige;
+}
+.Drawing {
+    background-color: black;
+    color: beige;
+}
+.Ceramics {
+    background-color: black;
+    color: beige;
+}
+.CONTACT {
+    background: rgb(148, 0, 0) ;
+    color: beige;
+}
+.Submit {
+    background-color: rgb(148, 0, 0);
+    color: beige;
+    margin: 10px;
+}
+
+/* ROWS & COLUMNS */
+
+.row1 {
+    display:inline;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+}
+.row2 {
+    display: inline;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    padding-right: 15px;
+    background-color: rgb(40, 40, 40) ;
+    margin: 0px;
+    display: flex;
+    justify-content:end;
+    text-align: justify right;
+    position: left center;
+}
+footer p {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    color: beige;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+/* CURSOR */
+a:hover {
+    color: rgb(148, 0, 0);
+}
+a:active {
+    color: rgb(148, 0, 0);
+}
+

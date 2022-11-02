@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NARF Creations - Portfolio Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header1>
+        <img src="images/brand-icon.png" alt="brand-icon" width="80" height="96"/> 
+        <h1>NARF Creations</h1>
+        <img src="images/logo.jpg" alt="logo" width="60" height="75"/> 
+</header1>
+<header2>
+    <p>
+        <nav>
+            <a href="#HOME">HOME &bull; </a>
+            <a href="about-page.html">ABOUT &bull;</a>
+            <a href="portfolio-page.html">PORTFOLIO &bull;</a>
+            <a href="inventory-page.html">INVENTORY &bull;</a>
+            <a href="contact-page.html">CONTACT &bull;</a>
+        </nav>
+    </p>
+</header2>
+        <section>
+            <article id="PORTFOLIO">
+            <h3><u>PORTFOLIO</u></h3>
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="images/portfolio1.jpg" width="577px" height="416px"/>
+              </div>
+            
+              <div class="mySlides1">
+                <img src="images/portfolio2.jpg" width="577px" height="416px"/>
+              </div>
+            
+              <div class="mySlides1">
+                <img src="images/portfolio3.jpg" width="577px" height="416px"/>
+              </div>
+            
+              <div class="mySlides1">
+                <img src="images/portfolio4.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio5.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio6.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio7.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio8.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio9.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio10.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio11.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio12.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio13.jpg" width="577px" height="416px"/>
+              </div>
+              
+              <div class="mySlides1">
+                <img src="images/portfolio14.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio15.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio16.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio17.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio18.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portfolio19.jpg" width="577px" height="416px"/>
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            
+            <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+          <br>
+
+        </section>
+        <footer>
+          <p>&copy; 2022 NARF Creations, Inc.</p>
+          <img src="images/facebook.png" alt="facebook"> 
+          <br>
+          <img src="images/instagram.png" alt="instagram"> 
+          <br>
+          <img src="images/twitter.png" alt="twitter"> 
+        </footer>
+        
+</body>

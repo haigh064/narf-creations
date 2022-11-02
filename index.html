@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NARF Creations - Home Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header1>
+        <img src="images/brand-icon.png"alt="brand-icon" width="80" height="96"/> 
+        <h1>NARF Creations</h1>
+        <img src="images/logo.jpg" alt="logo" width="60" height="75"/> 
+    </header1>
+    <header2>
+      <p>
+        <nav>
+            <a href="#HOME">HOME &bull; </a>
+            <a href="about-page.html">ABOUT &bull;</a>
+            <a href="portfolio-page.html">PORTFOLIO &bull;</a>
+            <a href="inventory-page.html">INVENTORY &bull;</a>
+            <a href="contact-page.html">CONTACT &bull;</a>
+        </nav>
+    </p>
+    </header2>
+        <section>
+            <article id="HOME">
+            <h3><u>HOME</u></h3>
+            <h2>TOP PICKS</h2>
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="images/top-picks.jpg" width="577px" height="416px"/>
+              </div>
+            
+              <div class="mySlides1">
+                <img src="images/print-1.jpg" width="577px" height="416px"/>
+              </div>
+            
+              <div class="mySlides1">
+                <img src="images/still-life.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/strawberries.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/star-girl.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portrait-4.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portrait-2.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portrait-1.jpg" width="577px" height="416px"/>
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/portrait-3.jpg" width="577px" height="416px"/>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            <br>
+            <br>
+            <h2>RECENT WORK</h2>
+            <div class="slideshow-container">
+              <div class="mySlides2">
+                <img src="images/recent.png" width="577px" height="416px" />
+              </div>
+            
+              <div class="mySlides2">
+                <img src="images/dig-drawing-2.png" width="577px" height="416px" />
+              </div>
+            
+              <div class="mySlides2">
+                <img src="images/animated-gif.gif" width="577px" height="416px" />
+              </div>
+
+              <div class="mySlides2">
+                <img src="images/'_'__.jpg" width="577px" height="416px"/>
+              </div>
+              
+              <div class="mySlides2">
+                <img src="images/'O' MAN.jpg" width="577px" height="416px"/>
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            
+            <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+
+            </article>
+        </section>
+        <footer>
+          <p>&copy; 2022 NARF Creations, Inc.</p>
+          <img src="images/facebook.png" alt="facebook"> 
+          <br>
+          <img src="images/instagram.png" alt="instagram"> 
+          <br>
+          <img src="images/twitter.png" alt="twitter"> 
+        </footer>
+        
+</body>
